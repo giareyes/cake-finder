@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Town Map</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="lib/spidergl.js"></script>
+		<script type="text/javascript" src="lib/spidergl-config.js"></script>
+		<script type="text/javascript" src="lib/nvmc.js"></script>
+		<script type="text/javascript" src="lib/nvmc-config.js"></script>
+		<script type="text/javascript" src="chapter3/cube.js"></script>
+		<script type="text/javascript" src="chapter3/cone.js"></script>
+		<script type="text/javascript" src="chapter3/cylinder.js"></script>
+		<script type="text/javascript" src="chapter3/sphere_latlong.js"></script>
+		<script type="text/javascript" src="chapter4/0/track.js"></script>
+		<script type="text/javascript" src="chapter4/0/quadrilateral.js"></script>
+		<script type="text/javascript" src="chapter4/0/shaders.js"></script>
+		<script type="text/javascript" src="chapter4/0/building.js"></script>
+		<script type="text/javascript" src="chapter4/0/0.js"></script>
+		<script type="text/javascript" src="chapter4/0/race.js"></script>
+		<script type="text/javascript" src="lib/nvmc-glue.js"></script>
+	</head>
+	<body>
+    <ul class="combar">
+        <li>Instructions</li>
+        <li>[w]: move forward<br>
+            [s]: move backward<br>
+            [a]: steer left<br>
+            [d]: steer right<br></li>
+    </ul>
+    <ul class="navbar">
+        <li>Town Map</li>
+        <li> This is an aerial view of your hometown, without the cake </li>
+    </ul>
+		<center>
+			<h2> Town Map</h2>
+			<div>
+			  <hr/>
+			  <canvas id="nvmc-canvas" width="600" height="400" style="border:1px solid gray;"></canvas>
+			  <hr/>
+			</div>
+			<div>
+			  <h3>Log</h3>
+			  <textarea id="nvmc-log" rows="4" cols="80"></textarea>
+			</div>
+			<div>
+			  <div id="nvmc-fps">FPS</div>
+			  <div id="nvmc-latency">Latency</div>
+			  <div id="nvmc-server-clock-delta">Server Clock Delta</div>
+			  <div id="nvmc-server-time">Server Time</div>
+			</div>
+			<hr/>
+		</center>
+	</body>
+</html>
